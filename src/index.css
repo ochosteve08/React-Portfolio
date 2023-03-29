@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--bg-color1);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding:0 20px;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    border-radius: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    font-weight: 300;
+}
+:root {
+    --bg-color1:#111;
+    --bg-color2:#202020;
+    --color0:#1B1B2A;
+    --color1:crimson;
+    --color2:crimson;
+    --color3:grey;
+    --color4:rgb(238, 238, 238);
+    --color5:#202020;
+    --color6:lightgrey;
+    --color7:dimgrey;
+    --color8:rgb(238, 238, 238);
+    --color9:darkgrey;
+
+}
+.blue {
+    color: blue;
+}
+.dodgerblue {
+    color: dodgerblue;
+}
+.red {
+    color: crimson;
+}
+.yellow {
+    color: yellow;
+}
