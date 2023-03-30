@@ -1,14 +1,10 @@
 import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
 import Boutique from "../../Assets/fashionista-boutique.png";
-
 import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
-import Portfolio from "../../Assets/portfolio.png";
-
+import Portfolio from '../../Assets/portfolio.png'
 import Movie from "../../Assets/Movie-App.png";
-
 import Notepad from "../../Assets/notepad.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./WebPortf.css";
@@ -20,41 +16,6 @@ const PortBoxes = () => {
 
   return (
     <div className="port-box-container">
-      <div className="port-boxes" data-aos="fade-up">
-        <div
-          className="portfolio-image"
-          onClick={() =>
-            window.open(
-              "https://ujah-stephen.netlify.app/",
-              "_blank",
-              "noreferrer"
-            )
-          }
-        >
-          <img src={Portfolio} loading="lazy" alt="portfolio image" />
-        </div>
-
-        <div>
-          <h3>My Portfolio</h3>
-          <p>
-            My portfolio showcasing a few of the projects built so far, others
-            can be found in my github profile.
-          </p>
-        </div>
-
-        <div>
-          <button data-aos="fade-up">CSS</button>
-          <button data-aos="fade-up">REACT</button>
-          <button data-aos="fade-up" style={{ cursor: "pointer" }}>
-            <a
-              href="https://github.com/ochosteve08/React-Portfolio"
-              target="_blank"
-            >
-              <BsGithub />
-            </a>
-          </button>
-        </div>
-      </div>
       <div className="port-boxes" data-aos="fade-up">
         <div className="portfolio-image">
           <img src={Boutique} loading="lazy" alt="Fashionista-boutique" />
@@ -85,6 +46,41 @@ const PortBoxes = () => {
           <button data-aos="fade-up" style={{ cursor: "pointer" }}>
             <a
               href="https://github.com/ochosteve08/Fashionista-E-commerce"
+              target="_blank"
+            >
+              <BsGithub />
+            </a>
+          </button>
+        </div>
+      </div>
+      <div className="port-boxes" data-aos="fade-up">
+        <div
+          className="portfolio-image"
+          onClick={() =>
+            window.open(
+              "https://ujah-stephen.netlify.app/",
+              "_blank",
+              "noreferrer"
+            )
+          }
+        >
+          <img src={Portfolio} loading="lazy" alt="portfolio image" />
+        </div>
+
+        <div>
+          <h3>My Portfolio</h3>
+          <p>
+            My portfolio showcasing a few of the projects built so far, others
+            can be found in my github profile.
+          </p>
+        </div>
+
+        <div>
+          <button data-aos="fade-up">CSS</button>
+          <button data-aos="fade-up">REACT</button>
+          <button data-aos="fade-up" style={{ cursor: "pointer" }}>
+            <a
+              href="https://github.com/ochosteve08/React-Portfolio"
               target="_blank"
             >
               <BsGithub />
