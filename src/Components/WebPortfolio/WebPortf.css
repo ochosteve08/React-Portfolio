@@ -1,6 +1,7 @@
 .portfolio-section {
     max-width: 1300px;
     margin: 9rem auto;
+    padding:0 20px;
 }
 .port-container {
     margin-top: 2.5rem;

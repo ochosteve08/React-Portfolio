@@ -1,6 +1,7 @@
 .stack {
     color: var(--color9);
     margin-bottom: 30px;
+      font-size: 1.8rem;
 }
 .about-container {
     max-width: 1300px;
@@ -9,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding:0 20px;
 }
 .about-f-container {
     max-width: 750px;

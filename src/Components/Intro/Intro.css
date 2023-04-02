@@ -21,7 +21,7 @@
 .intro-preface {
     color: var(--color6);
     margin-bottom: 1rem;
-    text-align: justify;
+  
 }
 .icon-container {
     display: flex;
@@ -47,7 +47,7 @@
     transition: .5s ease-in-out;
 }
 .icons:hover {
-    border: 2px solid crimson;
+    border: 2px solid rgb(19, 6, 9);
     color: crimson;
 }
 @media only screen and (max-width: 480px) {
@@ -58,12 +58,5 @@
         font-size: 42.5px;
         color: white;
         margin-bottom: 1.5rem;
-    }
-    .icons {
-        font-size: 18px;
-        height: 40px;
-        line-height: 40px;
-        width: 40px;
-        padding: 10px;
     }
 }

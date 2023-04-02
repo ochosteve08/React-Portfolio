@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.css'
-import {FiLinkedin, FiTwitter, FiGithub} from 'react-icons/fi'
+
 
 const Intro = () => {
   return (
@@ -12,7 +12,7 @@ const Intro = () => {
         </h1>
         <p className="intro-preface">
           A software developer with a strong background in frontend web
-          development. As a front-end developer, I am eager to apply my
+          development. As a front-end developer, I apply my
           technical skills and problem-solving abilities to help bring software
           ideas to life.
         </p>

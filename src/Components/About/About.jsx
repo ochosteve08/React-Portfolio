@@ -21,8 +21,8 @@ const About = () => {
         <p>
           I am a software developer with a strong background in frontend web
           development, focused on creating user-friendly and engaging websites.
-          I am results-driven and passionately detail-oriented, and eager to
-          apply my technical skills and problem-solving abilities as a front-end
+          I am results-driven and passionately detail-oriented, and I apply my
+          technical skills and problem-solving abilities as a front-end
           developer to help bring software ideas to life.,
         </p>
         <h3 className="stack">
@@ -35,22 +35,22 @@ const About = () => {
           <span className="skills-icon" data-aos="fade-down">
             <DiJavascript1 className="skill-icon yellow" />
           </span>
-          <span data-aos="fade-up">
+          <span className="skills-icon" data-aos="fade-up">
             <FaReact className="skill-icon dodgerblue" />
           </span>
-          <span data-aos="fade-down">
+          <span className="skills-icon" data-aos="fade-down">
             <SiTailwindcss className="skill-icon dodgerblue" />
           </span>
-          <span data-aos="fade-in">
+          <span className="skills-icon" data-aos="fade-in">
             <DiCss3Full className="skill-icon blue" />
           </span>
-          <span data-aos="fade-in">
+          <span className="skills-icon" data-aos="fade-in">
             <DiSass className="skill-icon red" />
           </span>
-          <span data-aos="fade-in">
+          <span className="skills-icon" data-aos="fade-in">
             <FaFigma className="skill-icon " />
           </span>
-          <span data-aos="fade-in">
+          <span className="skills-icon" data-aos="fade-in">
             <FaBootstrap className="skill-icon blue " />
           </span>
         </div>

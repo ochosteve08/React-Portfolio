@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
 import Boutique from "../../Assets/fashionista-boutique.png";
 import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
-import Portfolio from '../../Assets/portfolio.png';
+import Portfolio from "../../Assets/portfolio.png";
 import Movie from "../../Assets/Movie-App.png";
 import Notepad from "../../Assets/notepad.png";
 import AOS from "aos";

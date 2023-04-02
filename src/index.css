@@ -12,7 +12,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding:0 20px;
+  
 }
 ul {
     list-style: none;
