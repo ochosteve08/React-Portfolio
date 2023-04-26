@@ -1,12 +1,12 @@
 import React from "react";
-import passport from '../../Assets/passport.png'
+import passport from "../../Assets/passport.png";
 import "./About.css";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiJavascript1, DiCss3Full, DiSass } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss} from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
-import {FaBootstrap} from 'react-icons/fa'
+import { FaBootstrap } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -21,11 +21,12 @@ const About = () => {
         <p>
           I am a software developer with a strong background in frontend web
           development, focused on creating user-friendly and engaging websites.
-          I am results-driven and passionately detail-oriented, and I apply my
-          technical skills and problem-solving abilities as a front-end
-          developer to help bring software ideas to life.,
+          I am results-driven and passionately detail-oriented to ensuring to
+          producing projects with smooth user interfaces and experience, and I
+          apply my technical skills and problem-solving abilities as a front-end
+          developer to help bring software ideas to life.
         </p>
-        <h3 className="stack">
+        <h3 data-aos="fade-in" className="stack">
           Stacks and <span className="red">Tools</span>
         </h3>
         <div className="skills-button">

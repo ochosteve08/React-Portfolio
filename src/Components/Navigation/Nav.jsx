@@ -1,11 +1,13 @@
 import React from "react";
 import { BiMenuAltRight } from "react-icons/bi";
+import {AiOutlineClose} from "react-icons/ai";
 import "./Nav.css";
 import { useState } from "react";
 import resume from "../Resume/UJAH-RESUME.pdf";
 
 const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="navigation">
@@ -13,12 +15,13 @@ const Nav = () => {
         StephenUjah
       </a>
       <button
-        className="hamburger"
+        className="hamburger "
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
+          setToggle(!toggle);
         }}
       >
-        <BiMenuAltRight />
+        {!toggle ? <BiMenuAltRight /> : <AiOutlineClose/>}
       </button>
       <div
         className={
@@ -31,6 +34,7 @@ const Nav = () => {
               href="#about"
               onClick={() => {
                 setIsNavExpanded(!isNavExpanded);
+                setToggle(!toggle);
               }}
             >
               About
@@ -41,6 +45,7 @@ const Nav = () => {
               href="#portfolio"
               onClick={() => {
                 setIsNavExpanded(!isNavExpanded);
+                setToggle(!toggle);
               }}
             >
               Portfolio
@@ -51,13 +56,16 @@ const Nav = () => {
               href="#contact"
               onClick={() => {
                 setIsNavExpanded(!isNavExpanded);
+                setToggle(!toggle);
               }}
             >
               Contact
             </a>
           </li>
           <li>
-            <a href={resume} class="resume-download-btn" download="./">
+            <a href={resume} class="resume-download-btn" download="./" onClick={()=>{
+              setIsNavExpanded(!isNavExpanded);
+              setToggle(!toggle)}}>
               Resume
             </a>
           </li>
