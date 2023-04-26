@@ -1,13 +1,28 @@
 import React from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import {AiOutlineClose} from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import "./Nav.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import resume from "../Resume/UJAH-RESUME.pdf";
 
 const Nav = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleClickOutside = (event) => {
+    if (toggle && navRef.current && !navRef.current.contains(event.target)) {
+      setIsNavExpanded(false);
+      setToggle(false);
+    }
+  };
 
   return (
     <nav className="navigation">
@@ -21,9 +36,10 @@ const Nav = () => {
           setToggle(!toggle);
         }}
       >
-        {!toggle ? <BiMenuAltRight /> : <AiOutlineClose/>}
+        {!toggle ? <BiMenuAltRight /> : <AiOutlineClose />}
       </button>
       <div
+        ref={navRef}
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }
@@ -63,9 +79,15 @@ const Nav = () => {
             </a>
           </li>
           <li>
-            <a href={resume} class="resume-download-btn" download="./" onClick={()=>{
-              setIsNavExpanded(!isNavExpanded);
-              setToggle(!toggle)}}>
+            <a
+              href={resume}
+              className="resume-download-btn"
+              download="./"
+              onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+                setToggle(!toggle);
+              }}
+            >
               Resume
             </a>
           </li>
