@@ -3,12 +3,12 @@ import { BsGithub } from "react-icons/bs";
 import Boutique from "../../Assets/fashionista-boutique.png";
 import Budget from "../../Assets/budget-app.png";
 import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
-import Portfolio from "../../Assets/portfolio.png";
+// import Portfolio from "../../Assets/portfolio.png";
 import Movie from "../../Assets/Movie-App.png";
 import Notepad from "../../Assets/notepad.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./WebPortf.css";
+import "./WebPortfolio.css";
 
 const PortBoxes = () => {
   useEffect(() => {
@@ -89,7 +89,7 @@ const PortBoxes = () => {
         </div>
       </div>
 
-      <div className="port-boxes" data-aos="fade-up">
+      {/* <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
           onClick={() =>
@@ -123,7 +123,7 @@ const PortBoxes = () => {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="port-boxes" data-aos="fade-up">
         <div className="portfolio-image">
           <img src={Boutique} loading="lazy" alt="Fashionista-boutique" />

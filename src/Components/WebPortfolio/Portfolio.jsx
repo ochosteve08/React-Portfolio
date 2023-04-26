@@ -1,6 +1,6 @@
 import React from 'react'
 import PortBoxes from './PortBoxes'
-import './WebPortf.css'
+import './WebPortfolio.css'
 
 
 
