@@ -6,75 +6,53 @@ import { useState, useRef, useEffect } from "react";
 import resume from "../Resume/UJAH-RESUME.pdf";
 
 const Nav = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
   const navRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    console.log(toggleMenu);
+    if (
+      toggleMenu &&
+      navRef.current &&
+      !navRef.current.contains(event.target)
+    ) {
+      console.log("menu closed");
+      setToggleMenu(false);
+    }
+  };
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
-
-  const handleClickOutside = (event) => {
-    if (toggle && navRef.current && !navRef.current.contains(event.target)) {
-      setIsNavExpanded(false);
-      setToggle(false);
-    }
-  };
+  }, [toggleMenu]);
 
   return (
     <nav className="navigation">
       <a href="#" className="brand-name">
         StephenUjah
       </a>
-      <button
-        className="hamburger "
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-          setToggle(!toggle);
-        }}
-      >
-        {!toggle ? <BiMenuAltRight /> : <AiOutlineClose />}
+      <button className="hamburger " onClick={() => setToggleMenu(!toggleMenu)}>
+        {toggleMenu ? <AiOutlineClose /> : <BiMenuAltRight />}
       </button>
       <div
         ref={navRef}
-        className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-        }
+        className={toggleMenu ? "navigation-menu expanded" : "navigation-menu"}
       >
         <ul>
           <li>
-            <a
-              href="#about"
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-                setToggle(!toggle);
-              }}
-            >
+            <a href="#about" onClick={() => setToggleMenu(!toggleMenu)}>
               About
             </a>
           </li>
           <li>
-            <a
-              href="#portfolio"
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-                setToggle(!toggle);
-              }}
-            >
+            <a href="#portfolio" onClick={() => setToggleMenu(!toggleMenu)}>
               Portfolio
             </a>
           </li>
           <li>
-            <a
-              href="#contact"
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-                setToggle(!toggle);
-              }}
-            >
+            <a href="#contact" onClick={() => setToggleMenu(!toggleMenu)}>
               Contact
             </a>
           </li>
@@ -83,10 +61,7 @@ const Nav = () => {
               href={resume}
               className="resume-download-btn"
               download="./"
-              onClick={() => {
-                setIsNavExpanded(!isNavExpanded);
-                setToggle(!toggle);
-              }}
+              onClick={() => setToggleMenu(!toggleMenu)}
             >
               Resume
             </a>
