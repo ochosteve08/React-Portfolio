@@ -10,13 +10,13 @@ const Nav = () => {
   const navRef = useRef(null);
 
   const handleClickOutside = (event) => {
-    console.log(toggleMenu);
+    
     if (
       toggleMenu &&
       navRef.current &&
       !navRef.current.contains(event.target)
     ) {
-      console.log("menu closed");
+      
       setToggleMenu(false);
     }
   };
