@@ -4,7 +4,7 @@ import Boutique from "../../Assets/fashionista-boutique.png";
 import Estate from "../../Assets/estate.png";
 import Budget from "../../Assets/budget-app.png";
 import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
-import Portfolio from "../../Assets/Portfolio.png";
+// import Portfolio from "../../Assets/Portfolio.png";
 import Movie from "../../Assets/Movie-App.png";
 import Notepad from "../../Assets/notepad.png";
 import AOS from "aos";
@@ -55,7 +55,7 @@ const PortBoxes = () => {
           </button>
         </div>
       </div>
-      <div className="port-boxes" data-aos="fade-up">
+      {/* <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
           onClick={() =>
@@ -89,7 +89,7 @@ const PortBoxes = () => {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="port-boxes" data-aos="fade-down">
         <div className="portfolio-image">
           <img src={Budget} loading="lazy" alt="Fashionista-boutique" />
