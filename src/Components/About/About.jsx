@@ -31,35 +31,35 @@ const About = () => {
         </h3>
         <div className="skills-button">
           <span className="skills-icon" data-aos="fade-in">
-            <AiFillHtml5 className="skill-icon red" title="html" />
+            <AiFillHtml5 className="skill-icon red" title="HTML" />
           </span>
           <span className="skills-icon" data-aos="fade-down">
-            <DiJavascript1 className="skill-icon yellow" />
+            <DiJavascript1 className="skill-icon yellow" title="JAVASCRIPT" />
           </span>
           <span className="skills-icon" data-aos="fade-up">
-            <FaReact className="skill-icon dodgerblue" />
+            <FaReact className="skill-icon dodgerblue" title="REACT" />
           </span>
           <span className="skills-icon" data-aos="fade-down">
-            <SiTailwindcss className="skill-icon dodgerblue" />
+            <SiTailwindcss className="skill-icon dodgerblue" title="TAILWIND" />
           </span>
-          <span className="skills-icon" data-aos="fade-in">
+          <span className="skills-icon" data-aos="fade-down">
             <DiCss3Full className="skill-icon blue" />
           </span>
-          <span className="skills-icon" data-aos="fade-in">
-            <DiSass className="skill-icon red" />
+          <span className="skills-icon" data-aos="fade-up">
+            <DiSass className="skill-icon red" title="SASS" />
           </span>
-          <span className="skills-icon" data-aos="fade-in">
-            <FaFigma className="skill-icon " />
+          <span className="skills-icon" data-aos="fade-right">
+            <FaFigma className="skill-icon " title="FIGMA" />
           </span>
-          <span className="skills-icon" data-aos="fade-in">
-            <FaBootstrap className="skill-icon blue " />
+          <span className="skills-icon" data-aos="fade-left">
+            <FaBootstrap className="skill-icon blue " title="BOOTSTRAP" />
           </span>
         </div>
       </div>
       <div className="about-image-container">
         <img
           src={passport}
-          alt="UJAH STEPHEN"
+          alt="UJAH-STEPHEN"
           data-aos="fade-in"
           className="about-image"
         />

@@ -1,18 +1,25 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import "./EmailForm.css";
 import { MdOutlineSend } from "react-icons/md";
 
 const EmailForm = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
-      .sendForm(
-        "service_guxlsmb",
-        "template_eqwju7j",
-        form.current,
-        "BnhjwOWdkZs2ojaoH"
+      .send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+          to_name: "Recipient Name",
+          from_name: "Your Name",
+          reply_to: "your_email@example.com",
+          message: "This is a test email",
+        },
+        "YOUR_USER_ID"
       )
       .then(
         (result) => {
@@ -24,7 +31,11 @@ const EmailForm = () => {
           console.log("error sending message, try again!");
         }
       );
+
+    // Reset the form after submission
+    form.current.reset();
   };
+
   return (
     <section id="emailForm">
       <form ref={form} onSubmit={sendEmail}>
@@ -50,4 +61,5 @@ const EmailForm = () => {
     </section>
   );
 };
+
 export default EmailForm;
