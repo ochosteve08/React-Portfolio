@@ -35,8 +35,9 @@ const PortBoxes = () => {
         >
           <h3>Realtor Real-Estate</h3>
           <p>
-            A FullStack Real Estate website where users can check for listed properties of their choice and contact the landlord/agent. Authorized can also
-            list properties for sale or rent.
+            A FullStack Real Estate website where users can check for listed
+            properties of their choice and contact the landlord/agent.
+            Authenticated users can also list properties for sale or rent.
           </p>
         </div>
 
