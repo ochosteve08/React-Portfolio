@@ -18,6 +18,7 @@ const EmailForm = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent!");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -29,7 +30,7 @@ const EmailForm = () => {
     <section id="emailForm">
       <form ref={form} onSubmit={sendEmail}>
         <input
-          name="user_email"
+          name="from_name"
           type="email"
           id="email"
           placeholder="Email"
@@ -37,7 +38,7 @@ const EmailForm = () => {
         />
         <br />
         <textarea
-          name="user_message"
+          name="message"
           id="message"
           placeholder="Write message..."
           required
