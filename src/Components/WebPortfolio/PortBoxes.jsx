@@ -19,10 +19,6 @@ const PortBoxes = () => {
   return (
     <div className="port-box-container">
       <div className="port-boxes" data-aos="fade-down">
-        <div className="portfolio-image">
-          <img src={Estate} loading="lazy" alt="real-estate" />
-        </div>
-
         <div
           className="portfolio-image"
           onClick={() =>
@@ -33,6 +29,10 @@ const PortBoxes = () => {
             )
           }
         >
+          <img src={Estate} loading="lazy" alt="real-estate" />
+        </div>
+
+        <div className="portfolio-image">
           <h3>Realtor Real-Estate</h3>
           <p>
             A FullStack Real Estate website where users can check for listed
@@ -56,6 +56,7 @@ const PortBoxes = () => {
           </button>
         </div>
       </div>
+
       <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
@@ -91,13 +92,9 @@ const PortBoxes = () => {
           </button>
         </div>
       </div>
-      <div className="port-boxes" data-aos="fade-down">
-        <div className="portfolio-image">
-          <img src={Budget} loading="lazy" alt="Fashionista-boutique" />
-        </div>
 
+      <div className="port-boxes" data-aos="fade-down">
         <div
-          className="portfolio-image"
           onClick={() =>
             window.open(
               "https://ochosteve08.github.io/Budget-App/",
@@ -105,7 +102,12 @@ const PortBoxes = () => {
               "noreferrer"
             )
           }
+          className="portfolio-image"
         >
+          <img src={Budget} loading="lazy" alt="Fashionista-boutique" />
+        </div>
+
+        <div className="portfolio-image">
           <h3>Budget and Expense Tracker</h3>
           <p>
             Expense Tracker App that allows you to track your expenses. It uses
@@ -164,12 +166,7 @@ const PortBoxes = () => {
       </div>
 
       <div className="port-boxes" data-aos="fade-down">
-        <div className="portfolio-image">
-          <img src={Boutique} loading="lazy" alt="Fashionista-boutique" />
-        </div>
-
         <div
-          className="portfolio-image"
           onClick={() =>
             window.open(
               "https://fashionista-boutique-ecommerce.netlify.app/",
@@ -177,7 +174,12 @@ const PortBoxes = () => {
               "noreferrer"
             )
           }
+          className="portfolio-image"
         >
+          <img src={Boutique} loading="lazy" alt="Fashionista-boutique" />
+        </div>
+
+        <div className="portfolio-image">
           <h3>Fashionista</h3>
           <p>
             An e-commerce landing page with CRUD (Create, Read, Update, and
@@ -201,6 +203,7 @@ const PortBoxes = () => {
           </button>
         </div>
       </div>
+
       <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
