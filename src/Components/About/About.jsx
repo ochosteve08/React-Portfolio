@@ -2,7 +2,7 @@ import React from "react";
 import passport from "../../Assets/passport.png";
 import "./About.css";
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiJavascript1, DiCss3Full, DiSass } from "react-icons/di";
+import { DiJavascript1, DiCss3Full, DiSass, DiNodejs } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
@@ -43,7 +43,7 @@ const About = () => {
             <SiTailwindcss className="skill-icon dodgerblue" title="TAILWIND" />
           </span>
           <span className="skills-icon" data-aos="fade-down">
-            <DiCss3Full className="skill-icon blue" />
+            <DiCss3Full className="skill-icon blue" title="CSS" />
           </span>
           <span className="skills-icon" data-aos="fade-up">
             <DiSass className="skill-icon red" title="SASS" />
@@ -53,6 +53,9 @@ const About = () => {
           </span>
           <span className="skills-icon" data-aos="fade-left">
             <FaBootstrap className="skill-icon blue " title="BOOTSTRAP" />
+          </span>
+          <span className="skills-icon green" data-aos="fade-left">
+            <DiNodejs className="skill-icon green" title="NODE.JS" />
           </span>
         </div>
       </div>
