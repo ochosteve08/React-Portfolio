@@ -9,7 +9,7 @@ const Intro = () => {
           <span>Hi, I am </span>
           <span className="red">Ujah Stephen</span>
         </h1>
-        <p className="intro-preface">A Front-end Web Developer</p>
+        <p className="intro-preface">A Software Web Developer</p>
       </div>
     </section>
   );
