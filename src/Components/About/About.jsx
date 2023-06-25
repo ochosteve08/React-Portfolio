@@ -19,9 +19,9 @@ const About = () => {
           <span className="line"></span>
         </div>
         <p>
-          I am a software developer with expertise in both frontend and backend web
-          development, focused on creating user-friendly & engaging websites, and robust APIs.
-          I am results-driven and passionately detail-oriented to ensuring to
+          I am a software developer with expertise in building both frontend and backend web 
+          products, focused on creating user-friendly & engaging websites, and robust APIs.
+          I am results-driven and detail-oriented to ensuring to
           producing projects with smooth user interfaces and experience, and I
           apply my technical skills and problem-solving abilities as a front-end
           developer to help bring software ideas to life.
