@@ -3,8 +3,8 @@ import { BsGithub } from "react-icons/bs";
 import Boutique from "../../Assets/fashionista-boutique.png";
 import Estate from "../../Assets/estate.png";
 import Budget from "../../Assets/budget-app.png";
-import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
-// import Portfolio from "../../Assets/Portfolio.png";
+// import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
+import Stevetech from "../../Assets/stevetech.png";
 import Movie from "../../Assets/Movie-App.png";
 import Notepad from "../../Assets/notepad.png";
 import AOS from "aos";
@@ -18,6 +18,42 @@ const PortBoxes = () => {
 
   return (
     <div className="port-box-container">
+      <div className="port-boxes" data-aos="fade-up">
+        <div
+          className="portfolio-image"
+          onClick={() =>
+            window.open(
+              "https://steve-tech.vercel.app",
+              "_blank",
+              "noreferrer"
+            )
+          }
+        >
+          <img src={Stevetech} loading="lazy" alt="stevetech" />
+        </div>
+
+        <div>
+          <h3>Steve-Technologies</h3>
+          <p>
+            A full stack MERN website that takes inventory of all employees in
+            an organization, their portfolios, assigned client's task and status
+            progress.
+          </p>
+        </div>
+
+        <div>
+          <button data-aos="fade-up">REACT</button>
+          <button data-aos="fade-down">REDUX</button>
+          <button data-aos="fade-up">EXPRESS</button>
+          <button data-aos="fade-down">MONGODB</button>
+          <button data-aos="fade-up">NODEJS</button>
+          <button data-aos="fade-down" style={{ cursor: "pointer" }}>
+            <a href="https://github.com/ochosteve08/SteveTech" target="_blank">
+              <BsGithub />
+            </a>
+          </button>
+        </div>
+      </div>
       <div className="port-boxes" data-aos="fade-down">
         <div
           className="portfolio-image"
@@ -56,43 +92,6 @@ const PortBoxes = () => {
           </button>
         </div>
       </div>
-
-      {/* <div className="port-boxes" data-aos="fade-up">
-        <div
-          className="portfolio-image"
-          onClick={() =>
-            window.open(
-              "https://ochosteve08.github.io/React-Portfolio/",
-              "_blank",
-              "noreferrer"
-            )
-          }
-        >
-          <img src={Portfolio} loading="lazy" alt="portfolio image" />
-        </div>
-
-        <div>
-          <h3>My Portfolio</h3>
-          <p>
-            My portfolio showcasing a few of the projects built so far, others
-            can be found in my github profile.
-          </p>
-        </div>
-
-        <div>
-          <button data-aos="fade-up">REACT</button>
-          <button data-aos="fade-up">CSS</button>
-          <button data-aos="fade-up" style={{ cursor: "pointer" }}>
-            <a
-              href="https://github.com/ochosteve08/React-Portfolio"
-              target="_blank"
-            >
-              <BsGithub />
-            </a>
-          </button>
-        </div>
-      </div> */}
-
       <div className="port-boxes" data-aos="fade-down">
         <div
           onClick={() =>
@@ -204,7 +203,7 @@ const PortBoxes = () => {
         </div>
       </div>
 
-      <div className="port-boxes" data-aos="fade-up">
+      {/* <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
           onClick={() =>
@@ -240,7 +239,7 @@ const PortBoxes = () => {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="port-boxes" data-aos="fade-down">
         <div

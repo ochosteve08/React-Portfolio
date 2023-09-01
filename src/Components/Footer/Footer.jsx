@@ -16,11 +16,11 @@ const Footer = () => {
         <a href="mailto:stephenujah@yahoo.com">
           <FiMail />
         </a>
-        <a href="https://www.linkedin.com/in/ujah-stephen-4a3a8782/">
+        <a href="https://www.linkedin.com/in/ujah-stephen" target={"_blank"}>
           <FaLinkedinIn />
         </a>
 
-        <a href="https://github.com/ochosteve08">
+        <a href="https://github.com/ochosteve08" target={"_blank"}>
           <BsGithub />
         </a>
       </div>
