@@ -57,7 +57,7 @@ const PortBoxes = () => {
         </div>
       </div>
 
-      <div className="port-boxes" data-aos="fade-up">
+      {/* <div className="port-boxes" data-aos="fade-up">
         <div
           className="portfolio-image"
           onClick={() =>
@@ -91,7 +91,7 @@ const PortBoxes = () => {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
 
       <div className="port-boxes" data-aos="fade-down">
         <div
