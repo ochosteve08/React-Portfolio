@@ -19,12 +19,12 @@ const About = () => {
           <span className="line"></span>
         </div>
         <p>
-          I am a software developer with expertise in building both frontend and backend web 
-          products, focused on creating user-friendly & engaging websites, and robust APIs.
-          I am results-driven and detail-oriented to ensuring to
-          producing projects with smooth user interfaces and experience, and I
-          apply my technical skills and problem-solving abilities as a front-end
-          developer to help bring software ideas to life.
+          I am a software developer skilled in both front-end and back-end web
+          development. I specialize in creating user-friendly, engaging
+          websites, and robust APIs. With a results-driven and detail-oriented
+          approach, I ensure seamless user interfaces and experiences. My
+          technical and problem-solving expertise shines in bringing software
+          concepts to fruition.
         </p>
         <h3 data-aos="fade-in" className="stack">
           Stacks and <span className="red">Tools</span>
