@@ -59,7 +59,7 @@ const PortBoxes = () => {
           className="portfolio-image"
           onClick={() =>
             window.open(
-              "https://realtor-estate-theta.vercel.app/",
+              "https://estate-management23.vercel.app/",
               "_blank",
               "noreferrer"
             )
