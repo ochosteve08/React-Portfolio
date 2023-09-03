@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
-import Boutique from "../../Assets/fashionista-boutique.png";
+// import Boutique from "../../Assets/fashionista-boutique.png";
 import Estate from "../../Assets/estate.png";
 import Budget from "../../Assets/budget-app.png";
 // import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
@@ -164,7 +164,7 @@ const PortBoxes = () => {
         </div>
       </div>
 
-      <div className="port-boxes" data-aos="fade-down">
+      {/* <div className="port-boxes" data-aos="fade-down">
         <div
           onClick={() =>
             window.open(
@@ -201,7 +201,7 @@ const PortBoxes = () => {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="port-boxes" data-aos="fade-up">
         <div
