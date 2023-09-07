@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
 // import Boutique from "../../Assets/fashionista-boutique.png";
 import Estate from "../../Assets/estate.png";
-import Budget from "../../Assets/budget-app.png";
+import Budget from "../../Assets/expensify.svg";
 // import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
 import Stevetech from "../../Assets/stevetech.png";
 import Movie from "../../Assets/Movie-App.png";
@@ -22,11 +22,7 @@ const PortBoxes = () => {
         <div
           className="portfolio-image"
           onClick={() =>
-            window.open(
-              "https://steve-tech.vercel.app",
-              "_blank",
-              "noreferrer"
-            )
+            window.open("https://steve-tech.vercel.app", "_blank", "noreferrer")
           }
         >
           <img src={Stevetech} loading="lazy" alt="stevetech" />
@@ -96,7 +92,7 @@ const PortBoxes = () => {
         <div
           onClick={() =>
             window.open(
-              "https://ochosteve08.github.io/Budget-App/",
+              "https://expensify-2.vercel.app/",
               "_blank",
               "noreferrer"
             )
@@ -107,23 +103,19 @@ const PortBoxes = () => {
         </div>
 
         <div className="portfolio-image">
-          <h3>Budget and Expense Tracker</h3>
+          <h3>EXPENSIFY</h3>
           <p>
-            Expense Tracker App that allows you to track your expenses. It uses
-            the useReducer hook and context API to manage global state and store
-            data in local storage.
+            A Budget/Expense Tracker App that allows users create budget and
+            track expenses made in line with budgeted amount.
           </p>
         </div>
 
         <div>
           <button data-aos="fade-up">REACT</button>
-          <button data-aos="fade-up">BOOTSTRAP</button>
+          <button data-aos="fade-up"> REACT-ROUTER V6.4</button>
 
           <button data-aos="fade-up" style={{ cursor: "pointer" }}>
-            <a
-              href="https://github.com/ochosteve08/Budget-App/tree/master"
-              target="_blank"
-            >
+            <a href="https://github.com/ochosteve08/Expensify" target="_blank">
               <BsGithub />
             </a>
           </button>
