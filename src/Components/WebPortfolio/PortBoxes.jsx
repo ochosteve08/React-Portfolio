@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { BsGithub } from "react-icons/bs";
-// import Boutique from "../../Assets/fashionista-boutique.png";
 import Estate from "../../Assets/estate.png";
 import Budget from "../../Assets/expensify.svg";
-// import Landing from "../../Assets/manage-landing-page-frontendmentor-io.netlify.app_.png";
 import Stevetech from "../../Assets/stevetech.png";
-import Movie from "../../Assets/Movie-App.png";
+import Movie from "../../Assets/streamflix.png";
 import Notepad from "../../Assets/notepad.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -127,7 +125,7 @@ const PortBoxes = () => {
           className="portfolio-image"
           onClick={() =>
             window.open(
-              "https://ochosteve08.github.io/Movie-App/",
+              "https://stream-flix-sandy.vercel.app/",
               "_blank",
               "noreferrer"
             )
@@ -137,19 +135,19 @@ const PortBoxes = () => {
         </div>
 
         <div>
-          <h3>Movie App</h3>
+          <h3>StreamFlix</h3>
           <p>
-            Site allows the user to search for and save their favorite movies.
-            It uses an external API to fetch movie data and local storage to
-            store the user's favorite movies.
+            A cinema website that allows users search for their favorite movies
+            and further check for details.
           </p>
         </div>
 
         <div>
           <button data-aos="fade-up">REACT</button>
-          <button data-aos="fade-up">BOOTSTRAP</button>
+          <button data-aos="fade-up">REDUX</button>
+          <button data-aos="fade-up">SASS</button>
           <button data-aos="fade-up" style={{ cursor: "pointer" }}>
-            <a href="https://github.com/ochosteve08/Movie-App" target="_blank">
+            <a href="https://github.com/ochosteve08/StreamFlix" target="_blank">
               <BsGithub />
             </a>
           </button>
@@ -250,10 +248,10 @@ const PortBoxes = () => {
         <div>
           <h3>NotePad</h3>
           <p>
-            This is a note taking tool which will help you in writing down your
-            notes and store them until when needed. this application allows
-            users to create, read, update, and delete notes. This project uses
-            Local Storage to save the notes.
+            A note-taking tool which will help users document their notes and
+            store them until when needed. This application allows users to
+            create, read, update, and delete notes. Provision is made to ensure
+            that data persists.
           </p>
         </div>
 
