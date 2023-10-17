@@ -19,7 +19,7 @@ const About = () => {
           <span className="line"></span>
         </div>
         <p>
-          I am a software developer skilled in both front-end and back-end web
+          I am a software developer skilled in both front-end and back-end 
           development. I specialize in creating user-friendly, engaging
           websites, and robust APIs. With a results-driven and detail-oriented
           approach, I ensure seamless user interfaces and experiences. My
