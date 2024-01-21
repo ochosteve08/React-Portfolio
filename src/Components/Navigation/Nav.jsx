@@ -31,7 +31,7 @@ const Nav = () => {
   return (
     <nav className="navigation">
       <a href="#" className="brand-name">
-        StephenUjah
+        <span className="red">UJAH</span> STEPHEN
       </a>
       <button className="hamburger " onClick={() => setToggleMenu(!toggleMenu)}>
         {toggleMenu ? <AiOutlineClose /> : <BiMenuAltRight />}
