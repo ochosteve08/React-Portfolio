@@ -2,7 +2,7 @@ import React from "react";
 import passport from "../../Assets/passport.png";
 import "./About.css";
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiJavascript1, DiCss3Full, DiSass, DiNodejs } from "react-icons/di";
+import { DiJavascript1, DiCss3Full, DiSass, DiNodejs,DiMongodb } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
@@ -19,7 +19,7 @@ const About = () => {
           <span className="line"></span>
         </div>
         <p>
-          I am a software developer skilled in both front-end and back-end 
+          I am a software developer skilled in both front-end and back-end
           development. I specialize in creating user-friendly, engaging
           websites, and robust APIs. With a results-driven and detail-oriented
           approach, I ensure seamless user interfaces and experiences. My
@@ -56,6 +56,9 @@ const About = () => {
           </span>
           <span className="skills-icon green" data-aos="fade-left">
             <DiNodejs className="skill-icon green" title="NODE.JS" />
+          </span>
+          <span className="skills-icon green" data-aos="fade-left">
+            <DiMongodb className="skill-icon green" title="MONGODB" />
           </span>
         </div>
       </div>

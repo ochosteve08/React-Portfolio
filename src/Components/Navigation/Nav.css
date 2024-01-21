@@ -28,7 +28,10 @@ backdrop-filter: blur(5px);
   
 }
 .gold {
-    color: var(--color2);
+    color:gold;
+}
+.silver{
+  color: silver
 }
 .navigation-menu {
   margin-left: auto;
